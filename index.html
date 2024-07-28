@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,900|PT+Sans+Narrow|Yantramanav:400,900|Roboto:900,400|Bangers|Krona+One|Nunito:400,900|Frank+Ruhl+Libre:400,900|Oswald:400,900|Source+Serif+Pro|Work+Sans:400,900|Open+Sans|Raleway|Lato|Passion+One|Lateef|Crimson+Text|Baloo+Paaji+2|Jost|Oswald|Montserrat|Lexend+Deca|Bungee+Shade|Rubik|Inter:400,900|Bebas+Neue|Syncopate:400,700|VT323:400,900|Poppins:400,900|Fredoka+One:400,900|Staatliches:400,900|Redacted+Script:400,900|Rubik+Pixels:400,900|Cute+Font:400,900|Kosugi+Maru:400,900|Darumadrop+One:400,900|Kaisei+Decol:400,900|Playfair+Display:400,900|Rubik+Doodle+Shadow:400,900|Shadows+Into+Light:400,900|M+PLUS+1:400,900|Zeyada:400,900|Rock+Salt:400,900|Leckerli+One:400,900|Space+Mono:400,900|Finger+Paint:400,900"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://straw.page/min/?g=els&n=8385" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://straw.page/apple-touch-icon.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://straw.page/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://straw.page/favicon-16x16.png?v=2" />
+    <script defer src="https://notebook.straw.page" data-website-id="602afc09-cea9-455c-80f9-4850f295e57b"></script>
+    <meta property="twitter:title" content="Gimme dat crac" />
+    <meta property="twitter:description" content="Gimme dat crac" />
+    <meta property="og:image" content="https://strawcdn.com/capture/pics/crac.world.jpg?v=9056" />
+    <meta name="twitter:title" content="Gimme dat crac" />
+    <meta name="twitter:description" content="Made with StrawPage" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://strawcdn.com/capture/pics/crac.world.jpg?v=6250" />
+    <meta name="straw:user" content="crac" />
+    <script src="https://cdn.usefathom.com/script.js" data-site="ZXDYIAXN" defer></script>
+    <style>
+      * {
+        outline: 0;
+        margin: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      a,
+      a:link,
+      a:visited,
+      .a:hover,
+      .a:focus,
+      a:active {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      body {
+        overflow-x: hidden;
+        background: var(--b);
+        --b: #fff;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        --mw: 600;
+      }
+
+      .first {
+        font-family: 'Yantramanav';
+        --p: #df001d;
+        --g: 32px;
+        --gs: 2.73438em;
+        --extra: 1;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+      .content {
+        margin: 0 auto;
+        /* min-height: calc(200vh + calc(1rem * calc(var(--extra) * var(--g)))); */
+        width: 100%;
+        max-width: calc(1px * var(--mw));
+        position: relative;
+        font-size: min(16px, 16 * (100vw / var(--mw)));
+        min-height: 100vh;
+      }
+
+      .element:hover {
+        cursor: auto;
+      }
+
+      .element[data-type='text'] * {
+        -webkit-user-drag: auto;
+        -khtml-user-drag: auto;
+        -moz-user-drag: auto;
+        -o-user-drag: auto;
+        user-drag: auto;
+        -khtml-user-select: auto;
+        -o-user-select: auto;
+        -moz-user-select: auto;
+        -webkit-user-select: auto;
+        user-select: auto;
+      }
+
+      .element {
+        transition: transform 0.3s ease;
+      }
+
+      .content a .element:hover,
+      .element[data-scrollto]:hover {
+        transform: rotate(calc(1deg * var(--r))) scale(calc(var(--s) * 1.05));
+        cursor: pointer;
+      }
+
+      .content a .element:hover button {
+        cursor: pointer;
+      }
+
+      .element:not([data-type='wordart']) p {
+        -webkit-transform: translate3d(0, 0, 0);
+      }
+
+      .branding {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.4));
+        background: #df001d;
+        z-index: 9999999999999999;
+        transition: all 0.3s ease;
+        transform: none;
+      }
+
+      .branding img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 0;
+        padding: 2px;
+      }
+
+      .brandingContent {
+        display: none;
+      }
+
+      .brandingContent p {
+        margin: 0;
+        font-family: 'Yantramanav';
+        color: #fff;
+        font-size: 16px;
+        padding: 0 8px;
+      }
+
+      .branding:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      @media (min-width: 5px) {
+        .brandingContent {
+          display: block !important;
+        }
+      }
+
+      .inst {
+        --scaler: 1.2;
+      }
+
+      .inst.fb {
+        --scaler: 1.15;
+      }
+
+      .inst .element[data-type='text'] .el_content,
+      .inst .element[data-type='icon'] .el_content,
+      .inst .element[data-type='button'] button {
+        font-size: calc(1em * calc(var(--ts) / var(--scaler)));
+      }
+
+      .element[data-type='embed'] iframe {
+        pointer-events: all;
+      }
+
+      .element[data-type='image']:not([data-link]):not([data-scrollto]),
+      .element[data-type='icon']:not([data-link]):not([data-scrollto]),
+      .element[data-type='shape']:not([data-link]):not([data-scrollto]) {
+        pointer-events: none;
+      }
+
+      .element[data-type='text']:not([data-link]):not([data-scrollable]):not([data-scrollto]) {
+        pointer-events: none;
+      }
+
+      .element[data-type='text']:not([data-link]):not([data-scrollto]) * {
+        pointer-events: all;
+      }
+
+      .element[data-type='icon'][data-link] {
+        pointer-events: none;
+      }
+
+      .element[data-type='icon'][data-link] i {
+        pointer-events: all;
+      }
+
+      .element[data-type='paint'] {
+        pointer-events: none;
+      }
+
+      .element[data-type='paint'] g {
+        pointer-events: all;
+      }
+
+      /*	GIMMICKS	*/
+      .element[data-type='gimmick-canvas'] {
+        border: 0.15em solid var(--co);
+        --co: #df001d;
+        --ts: 1;
+        border-radius: 5px;
+        transform: rotate(calc(1deg * var(--r)));
+      }
+
+      .element[data-type='gimmick-canvas'] .innerCanvas {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .element[data-type='gimmick-canvas'] .toolbox {
+        margin: 0 0 0 auto;
+        background: #fff;
+        padding: 0.4em 0.6em;
+        color: var(--co);
+        display: inline-flex;
+        font-size: calc(1em * var(--ts));
+        position: absolute;
+        top: -0em;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        border: 0.15em solid var(--co);
+        border-radius: calc(5px / 2);
+        align-items: center;
+        max-width: 100%;
+      }
+
+      .element[data-type='gimmick-canvas'] .toolbox i {
+        padding: 0 0.4em;
+        font-size: 1.1em;
+      }
+
+      .element[data-type='gimmick-canvas'] .picasso {
+        background: #fff;
+        flex: 1;
+        border-radius: calc(5px / 2);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .element[data-type='gimmick-canvas'] .picasso canvas {
+        height: 100%;
+        width: 100%;
+      }
+
+      .element[data-type='gimmick-canvas'] .sendPicasso {
+        padding: 0em;
+      }
+
+      .element[data-type='gimmick-canvas'] .sendPicasso button {
+        -webkit-appearance: none;
+        appearance: none;
+        background: #fff;
+        color: var(--co);
+        text-align: center;
+        border: 0;
+        border-top: 0.15em solid var(--co);
+        width: 100%;
+        padding: 0.5em 0.2em;
+        font-family: 'Yantramanav';
+        font-size: 1.1em;
+        border-bottom-left-radius: calc(5px / 2);
+        border-bottom-right-radius: calc(5px / 2);
+        transition: all 0.3s ease;
+      }
+
+      .element[data-type='gimmick-canvas'] .sendPicasso button:hover {
+        background: var(--co);
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .element[data-type='gimmick-ama'] .askerSend button:hover {
+        background: var(--co);
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .element[data-type='gimmick-ama'] .askExtra {
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .element[data-type='gimmick-ama'] .askExtra img {
+        height: 1.875em;
+        width: 1.875em;
+        position: absolute;
+        left: calc(50% - 4px);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .element[data-type='gimmick-ama'] .askExtra:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+
+      .element[data-type='gimmick-canvas'] .canvCol {
+        height: 1.1em;
+        width: 1.1em;
+        border-radius: 50%;
+        margin: 0 0.4em;
+        background: conic-gradient(
+          from 0deg at 50% 50%,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%
+        );
+      }
+
+      .element[data-type='gimmick-canvas'] [type='color'] {
+        visibility: hidden;
+        position: absolute;
+      }
+
+      .canvSizing {
+        display: flex;
+        align-items: center;
+      }
+
+      .element[data-type='gimmick-canvas'] [type='range'] {
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 5px;
+        width: 3em;
+        background: var(--co);
+        border-radius: 40px;
+        border: 1px solid var(--co);
+        background: 0;
+        margin: 0 0.5rem;
+      }
+
+      .element[data-type='gimmick-canvas'] [type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background: var(--co);
+        height: 15px;
+        width: 15px;
+        border: 2px solid var(--co);
+        border-radius: 40px;
+      }
+
+      .element[data-type='gimmick-canvas'].doneArt,
+      .element[data-type='gimmick-ama'].doneArt {
+        pointer-events: none;
+      }
+
+      .jfr .element,
+      .jfr .element * {
+        pointer-events: all !important;
+      }
+
+      @media (max-width: 385px) {
+        .element[data-type='gimmick-canvas'] [type='range']::-webkit-slider-thumb {
+          height: 12px;
+          width: 12px;
+        }
+      }
+
+      .element[data-type='image'] img {
+        width: calc(100% * var(--s));
+        height: calc(100% * var(--s));
+        transform: scale(calc(1 / var(--s))) translateZ(0);
+      }
+
+      @-moz-document url-prefix() {
+        .element[data-type='image'] img {
+          min-height: calc(100% * var(--s));
+          min-width: calc(100% * var(--s));
+        }
+      }
+
+      .element[data-type='majorityvote'] .innerTalking p:not(.activeTalk) {
+        display: none;
+      }
+
+      .element[data-type='majorityvote'] .innerTalking:hover {
+        cursor: pointer;
+      }
+
+      .element.disableTmp {
+        pointer-events: none;
+      }
+
+      .completionCasso {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        background: var(--co);
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        transition: opacity 0.3s ease;
+      }
+
+      .completionCasso button {
+        -webkit-appearance: none;
+        appearance: none;
+        background: #fff;
+        color: var(--co);
+        border: 1px solid #fff;
+        font-family: 'Yantramanav';
+        font-size: 1em;
+        padding: 0.3em 0.8em;
+        transition: all 0.3s ease;
+      }
+
+      .completionCasso button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      .element[data-type='gimmick-canvas'].doneArt .completionCasso {
+        pointer-events: all;
+        opacity: 1;
+      }
+
+      .element[data-sound] {
+        pointer-events: all !important;
+      }
+
+      .element[data-sound]:hover {
+        cursor: pointer;
+      }
+
+      .element[data-type='spotify']:hover .imgWrap i {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+
+      .cursorMode .cursorReal {
+        background-image: var(--cu);
+        height: 32px;
+        width: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        z-index: 999999999999999999999;
+        pointer-events: none;
+      }
+
+      .cursorMode,
+      .cursorMode * {
+        cursor: none !important;
+      }
+
+      .spotSearch {
+        background: #18181b;
+        max-height: 270px;
+        position: fixed;
+        bottom: -120vh;
+        left: 0;
+        right: 0;
+        max-width: 420px;
+        margin: 0 auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 15px;
+        height: 100%;
+        opacity: 0;
+        transition: bottom 0.3s ease;
+      }
+
+      .spotSearch.bringUp {
+        bottom: 0;
+        opacity: 1;
+      }
+
+      .spotSearch .closer {
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        color: #fff;
+        height: 30px;
+        width: 40px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .spotSearch .closer:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .innerSpotSearch {
+        overflow-y: scroll;
+        height: 100%;
+      }
+
+      .searchWrap {
+        position: sticky;
+        top: 0px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 10px;
+        color: #8d8d8f;
+        background: #27272a;
+        border-radius: 40px;
+        overflow: hidden;
+      }
+
+      .searchWrap input {
+        background: #27272a;
+        width: 100%;
+        font-family: 'Yantramanav';
+        padding: 8px 8px;
+        border: 0;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .searchWrap input::placeholder {
+        color: #8d8d8f;
+      }
+
+      .searchWrap i {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 14px;
+        font-size: 13px;
+      }
+
+      .spotResults {
+        padding: 20px 0;
+        display: grid;
+        grid-gap: 10px;
+      }
+
+      .spotItem {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 20px;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+
+      .spotItem:hover {
+        background: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+      }
+
+      .spotItem img {
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 6px;
+      }
+
+      .spotMeta {
+        color: #cfcfd3;
+        display: grid;
+        grid-gap: 4px;
+      }
+
+      .spotMeta h5 {
+        font-size: 13px;
+        color: #fff;
+      }
+
+      .spotMeta p {
+        font-size: 13px;
+      }
+
+      .spotMeta i {
+        font-size: 12px;
+        padding-right: 4px;
+      }
+
+      .spotActions {
+        display: flex;
+        align-items: center;
+      }
+
+      .spotActions i {
+        padding: 4px;
+        font-size: 13px;
+      }
+
+      .followingDon {
+        transition: all 0.3s ease;
+      }
+
+      .followingDon:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+
+      .element[data-type='windowsplayer'] input[type='range'] {
+        -webkit-appearance: none;
+        width: 100%;
+        background: transparent;
+        font-size: 1em;
+      }
+
+      .element[data-type='windowsplayer'] input[type='range']::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 0.25em;
+        background: #9b9a99;
+        border-radius: 6.25em;
+        box-shadow: inset 0.0625em 0.0625em #000, inset -0.0625em -0.0625em #9b9a99;
+      }
+
+      .element[data-type='windowsplayer'] input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 0.625em;
+        height: 1em;
+        background: #9b9a99;
+        box-shadow: inset 0.0625em 0.0625em #9b9a99, inset -0.0625em -0.0625em #000, inset 0.125em 0.125em #9b9a99, inset -0.125em -0.125em #000;
+        margin-top: -0.375em;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+    <title>Shrimp</title>
+  </head>
+  <body style="--g: 1.5; --b: #a73f26">
+    <div class="first">
+      <div class="content" style="height: 4562px">
+        <div class="element" style="--x: -0.01447474459807078; --y: 56.99553871154785; --w: 16; --h: 20; --r: 0; --s: 1; --bc: #c4c4c4; --boc: #919191" data-uid="rgjrhskqnh" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--x: 0.04431541760762533; --y: 37.63086191813151; --w: 16; --h: 20; --r: 0; --s: 1; --bc: #c4c4c4; --boc: #919191" data-uid="rgjrhskqnh" data-lock="true" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--x: 0; --y: 0; --w: 16; --h: 1; --r: 0; --s: 1; --bc: #010174" data-uid="zibgxvscxh" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.1; --x: 0.21333333333333335; --y: 0; --w: 7; --h: 1; --r: 0; --s: 1; --co: #ffffff; --ta: left; --f: VT323" data-uid="vuzqhzqpfo" data-type="text">
+          <div class="el_content">
+            <p>The Shrimp Sanctuary</p>
+          </div>
+        </div>
+        <div class="element" style="--x: 14.096666666666667; --y: -0.003333333333333334; --w: 1; --h: 1; --r: 0; --s: 0.4; --bc: #b8b9b2" data-lock="true" data-uid="ojdbgmijzw" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--x: 14.593333333333334; --y: -0.003333333333333334; --w: 1; --h: 1; --r: 0; --s: 0.4; --bc: #b8b9b2" data-lock="true" data-uid="sqvxgfylwu" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--x: 15.106666666666667; --y: -0.003333333333333334; --w: 1; --h: 1; --r: 0; --s: 0.4; --bc: #b8b9b2" data-lock="true" data-uid="nzoyghbvcm" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--x: 0; --y: 1; --w: 16; --h: 1; --r: 0; --s: 1; --boc: #919191; --bos: 0.06; --bc: #c4c4c4" data-uid="tpjlrdcnnw" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.1; --f: VT323; --co: #050101; --x: 0; --y: 1; --w: 4.4; --h: 1; --r: 0; --s: 1; --px: 0.5; --ta: left" data-uid="fcccpnyuqt" data-type="text">
+          <div class="el_content">
+            <p><u>F</u>ile |&nbsp;<u>E</u>dit | <u>D</u>elete</p>
+          </div>
+        </div>
+        <div
+          class="element"
+          style="--ts: 1.5; --f: Finger Paint; --co: #050101; --x: 6.133333333333334; --y: 0.9966666666666667; --w: 10.6; --h: 1; --r: 0; --s: 0.7; --bc: #ffffff; --boc: #919191; --bos: 0.07"
+          data-fun-markoui="normal"
+          data-fun-text="Shrimp"
+          data-lock="true"
+          data-uid="tikajddxum"
+          data-type="text"
+        >
+          <div class="el_content">
+            <p>Shrimp</p>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.1; --x: 14.96; --y: 1.0033333333333334; --w: 1; --h: 1; --r: 0; --s: 0.7; --bc: #919191" data-lock="true" data-uid="qjzumpbcej" data-type="icon">
+          <div class="el_content">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="element" style="--x: 0; --y: 2; --w: 5.4; --h: 6; --r: 0; --s: 1; --boc: #919191; --bos: 0.06" data-uid="syjydpheax" data-type="image">
+          <img src="/images/shrimp.png" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" style="--y: 0; --x: -11.2" data-uid="wxeogcxjhy" data-type="paint">
+          <svg>
+            <g>
+              <defs></defs>
+            </g>
+          </svg>
+        </div>
+        <div class="element" style="--x: 5.386666666666667; --y: 1.9733333333333334; --w: 10.65; --h: 3; --r: 0; --s: 1; --bc: #c4c4c4; --boc: #919191; --bos: 0.06" data-uid="txtcpumcwg" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--ts: 2; --x: 4.883421262105306; --y: 2.091797351837158; --w: 13.1; --h: 2.9; --r: 0; --s: 0.8" data-uid="fblsstxiqk" data-type="wordart">
+          <div class="wordart" data-genre="eleven">
+            <p data-content="THIS CRAC WANTS TO LIVE IN YOUR WALLET">THIS SHRIMPT WITH VOLUME BOOSTER BOT</p>
+          </div>
+        </div>
+        <div class="element" style="--x: 5.4; --y: 4.946666666666666; --w: 10.65; --h: 3.05; --r: 0; --s: 1; --bc: #e4e4e4; --boc: #919191; --bos: 0.06" data-uid="ksjdktkpob" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--y: 0; --x: -11.2" data-uid="lsitygezki" data-type="paint">
+          <svg>
+            <g></g>
+          </svg>
+        </div>
+        <div class="element" style="--ts: 1.2; --f: VT323; --co: #050101; --x: 7.2864564259847; --y: 5.054861386617024; --w: 7.45; --h: 1; --r: 0; --s: 1; --bc: rgba(0, 0, 0, 0); --ta: left" data-uid="gghhcfntgp" data-type="text">
+          <div class="el_content">
+            <p>Shut up. Listen up. You have no idea how deep the crypto ocean goes. Shrimp is the ultimate underdog ready to flip the crypto script and make waves you can't ignore.</p>
+          </div>
+        </div>
+        <div class="element" style="--x: 0.0133333; --y: 7.96; --w: 8.7; --h: 5.35; --r: 0; --s: 1; --bc: #c4c4c4; --boc: #919191; --bos: 0.06" data-lock="true" data-uid="rjsfpwvvad" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.3; --f: VT323; --co: #050101; --x: 0.12; --y: 8.106666666666667; --w: 8.55; --h: 1; --r: 0; --s: 1; --px: 0.5; --ta: left" data-uid="iyunnboann" data-type="text">
+          <div class="el_content">
+            <p>
+              <u>WHAT WE KNOW</u>
+            </p>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.1; --f: VT323; --co: #050101; --x: 1.68; --y: 9.28; --w: 6.6; --h: 1; --r: 0; --s: 1; --bc: rgba(0, 0, 0, 0); --ta: left" data-uid="aixkkrdoed" data-type="text">
+          <div class="el_content">
+            <p>If you don't hodl Shrimp, you're missing out on the juiciest catch of the crypto sea.</p>
+          </div>
+        </div>
+        <div class="element" style="--x: 8.69333; --y: 7.97333; --w: 7.35; --h: 9.15; --r: 0; --s: 1; --bc: #c4c4c4; --boc: #919191; --bos: 0.06" data-lock="true" data-uid="cfkfpgdguv" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.3; --f: VT323; --co: #050101; --x: 8.746666666666666; --y: 8.066666666666666; --w: 7.1; --h: 1; --r: 0; --s: 1; --px: 0.5; --ta: right" data-uid="gsmfwxmekt" data-type="text">
+          <div class="el_content">
+            <p>
+              <u>JUST A HEADS UP</u>
+            </p>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.1; --f: VT323; --co: #050101; --x: 9.72; --y: 9.293333333333333; --w: 6.15; --h: 1; --r: 0; --s: 1; --bc: rgba(0, 0, 0, 0); --ta: left" data-uid="tieiovaynw" data-type="text">
+          <div class="el_content">
+            <p>TShrimp is taking over the crypto ocean, block by block. It's devouring FUD and FOMO.</p>
+            <p>You definitely want to join this ride, right? (Seriously, bro???)</p>
+          </div>
+        </div>
+        <div class="element" style="--x: 0; --y: 13.2167; --w: 8.73; --h: 3.9; --r: 0; --s: 1; --boc: #919191; --bos: 0.06" data-uid="vrhjcprmkr" data-type="image">
+          <img src="/images/shgif.gif" draggable="false" loading="lazy" />
+        </div>
+        <a href="https://x.com/" target="_blank">
+          <div class="element" style="--ts: 1.5; --f: VT323; --co: #050101; --x: 2; --y: 18; --w: 3.4; --h: 1; --r: 0; --s: 1; --bc: #e4e4e4; --boc: #919191; --bos: 0.06" data-uid="zfcoaqtopv" data-link="https://x.com/" data-type="text">
+            <div class="el_content">
+              <p>X!</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://pump.fun/" target="_blank">
+          <div
+            class="element"
+            style="--ts: 1.5; --f: VT323; --co: #050101; --x: 10.6667; --y: 17.9733; --w: 3.4; --h: 1; --r: 0; --s: 1; --bc: #e4e4e4; --boc: #919191; --bos: 0.06"
+            data-uid="cehsatgpdy"
+            data-link="https://pump.fun/"
+            data-type="text"
+          >
+            <div class="el_content">
+              <p>Pump!</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://t.me/" target="_blank">
+          <div
+            class="element"
+            style="--ts: 1.5; --f: VT323; --co: #050101; --x: 10.413333333333334; --y: 20.76; --w: 3.4; --h: 1; --r: 0; --s: 1; --bc: #e4e4e4; --boc: #919191; --bos: 0.06"
+            data-uid="ouvfqomaei"
+            data-link="https://t.me/"
+            data-type="text"
+          >
+            <div class="el_content">
+              <p>Telegram!</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://dexscreener.com/solana/" target="_blank">
+          <div
+            class="element"
+            style="--ts: 1.5; --f: VT323; --co: #050101; --x: 2.8266666666666667; --y: 21.093333333333334; --w: 3.4; --h: 1; --r: 0; --s: 1; --bc: #e4e4e4; --boc: #919191; --bos: 0.06"
+            data-uid="yncqbkwvdi"
+            data-link="https://dexscreener.com/solana/"
+            data-type="text"
+          >
+            <div class="el_content">
+              <p>Dex!</p>
+            </div>
+          </div>
+        </a>
+        <div
+          class="element"
+          style="--ts: 1.5; --f: VT323; --co: #050101; --x: 0.008333333333333333; --y: 23.063333333333333; --w: 16; --h: 1.25; --r: 0; --s: 1; --bc: #ffffff; --boc: #919191; --bos: 0.07"
+          data-fun-markoui="normal"
+          data-fun-text="You're gonna get hooked!"
+          data-uid="digytsvkxg"
+          data-type="text"
+        >
+          <div class="el_content">
+            <p>You're gonna get hooked!</p>
+          </div>
+        </div>
+        <div class="element" data-image="contain" style="--x: 6.693333333333333; --y: 18.466666666666665; --w: 3; --h: 3; --r: 0; --s: 1" data-uid="wqaqlfngmh" data-fun-spinner="true" data-type="image">
+          <img src="/images/logo.png" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" style="--x: 0.0133333; --y: 24.3067; --w: 16; --h: 13.35; --r: 0; --s: 1; --bc: #c4c4c4; --boc: #919191" data-lock="true" data-uid="rgjrhskqnh" data-type="shape">
+          <div class="innerShape">
+            <svg width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="--ns: 0.36">
+              <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="element" data-image="contain" style="--x: 13.04; --y: 27.706666666666667; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="hofymehafa" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 0.84; --y: 25.426666666666666; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="vxbmnlxxsg" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 1.52; --y: 30.746666666666666; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="frudvbujsb" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 12.6; --y: 30.733333333333334; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="fvtaukuaxb" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 13.466666666666667; --y: 32.666666666666664; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="rreuoghobw" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 13.72; --y: 33.16; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="frvnmhwjjm" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 14.106666666666667; --y: 33.733333333333334; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="uhhrsibhge" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 14.493333333333334; --y: 34.25333333333333; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="sjhyphfzlt" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 14.853333333333333; --y: 34.8; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="igvatfxchl" data-type="image">
+          <img src="https://media1.giphy.com/media/ihH80CKEmNG0Ady5wj/giphy.gif?cid=446e6413hm27iw9coeur4ctazj36hyxf73eltjkrprshdzb3&ep=v1_stickers_search&rid=giphy.gif&ct=s" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" style="--ts: 1.5; --f: VT323; --co: #050101; --x: 4.0000871022542315; --y: 30.375478108723957; --w: 8; --h: 27; --r: 0; --s: 1" data-uid="pxwjcjsxvc" data-type="text">
+          <div class="el_content">
+            <p><b>1. Start the Bot :</b> <br />Send the command /start to initiate the bot and display the main menu</p>
+            <p><b>2. Create Wallet :</b><br />Select "Create Wallet" from the menu to generate a new wallet. The bot will provide you with a public key and a private key</p>
+            <p><b>3. Import Wallet :</b>Select "Import Wallet" and send your private key to the bot. It will import the wallet and provide the public key</p>
+            <p><b>4. Show Private Key :</b>Select "Show Private Key" to display the private keys of all wallets you have created or imported</p>
+            <p><b>5. Set Pair :</b>Select "Set Pair" and send the token address you want to pair for the volume booster.</p>
+            <p><b>6. Start Booster :</b>Select "Start Booster" to begin the volume boosting process. Ensure you have a wallet and token pair set, as well as purchase limits configured</p>
+            <p><b>7. Stop Booster :</b>Select "Stop Booster" to halt the volume booster if it is running.</p>
+            <p><b>8. View Wallet :</b>Select "View Wallets" to see a list of your wallets along with their SOL balances.</p>
+            <p><b>9. Set Buy Limits :</b>Select "Set Buy Limits" and send the minimum and maximum purchase limits in the format: minAmount maxAmount (e.g., 0.0001 0.001)</p>
+            <p><b>10. Back To Main Menu :</b>Select "Back to Main Menu" to return to the main menu from any submenu</p>
+          </div>
+        </div>
+        <div class="element" style="--ts: 7; --f: Bebas Neue; --co: #ff0000; --x: 4; --y: 25; --w: 8; --h: 3; --r: 0" data-uid="iakpbhwxnf" data-fun-markoui="normal" data-fun-text="HOW TO USE" data-fun-coolblink="true" data-type="text">
+          <div class="el_content">
+            <p>HOW TO USE</p>
+          </div>
+        </div>
+        <div class="element" style="--ts: 1.5; --f: Bebas Neue; --co: #000000; --x: 4; --y: 28; --w: 8; --h: 2; --r: 0" data-uid="cpzryfoxns" data-type="text">
+          <div class="el_content">
+            <p>This shrimp is wild</p>
+            <p>How to Use Volume Booster</p>
+          </div>
+        </div>
+        <div class="element" data-image="contain" style="--x: 1.2000866731007893; --y: 11.159117380777994; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="kgtqvleecq" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 3.394966095685959; --y: 11.13710912068685; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="kgtqvleecq" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 5.5603288014729815; --y: 11.135894775390625; --w: 2; --h: 2; --r: 0; --s: 1" data-uid="kgtqvleecq" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 7.253906885782878; --y: 24.36858113606771; --w: 1; --h: 1; --r: 0; --s: 5" data-uid="cpehltcmsg" data-type="image">
+          <img src="/images/gg.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" style="--y: 0; --x: 0" data-uid="tazponwqmn" data-type="paint">
+          <svg>
+            <g>
+              <path
+                fill="#CE5428"
+                d="m256.82 268.363-1.88-1.12q-1.88-1.12-5.314-2.716t-6.783-2.99-6.684-2.897q-3.335-1.504-5.497-2.457-2.162-.954-4.031-1.805-1.87-.852-4.886-2.151t-6.54-2.672q-3.525-1.372-7.017-2.85t-6.376-2.811-5.237-2.468q-2.353-1.134-4.273-1.907t-4.628-1.786-4.65-1.828-4.768-2.168-4.881-2.34-4.576-2.117-4.406-2.046-3.967-1.818-4.128-1.78-3.536-3.472-.721-4.715 4.147-5.048 4.893-4.263 3.56-3.155q2.041-1.821 3.322-2.742 1.281-.92 1.832-1.087.55-.167 1.125-.197t1.14.078 1.088.349.973.598.802.815q.351.455.583.982t.331 1.094q.1.566.06 1.14-.04.575-.215 1.123t-.477 1.038q-.301.49-.712.893-.41.404-.905.698-.494.294-2.781 1.909t-4.495 3.163-3.85 2.798q-1.642 1.249-2.973 2.91t-2.82 3.226-1.81-1.208.716-.533 1.7 4.251 1.755 4.59 2.02 4.806 1.865 4.13 1.981 3.354 1.333 2.23.315 1.606-.215 1.622-.721 1.469-1.152 1.161-1.463.733-1.62.227q-.83-.019-1.609-.302t-1.427-.8q-.648-.516-1.097-1.213-.45-.697-.652-1.5-.204-.804-.14-1.63.065-.827.39-1.59.324-.763.875-1.382t1.271-1.03 1.534-.57q.813-.16 1.635-.05.822.109 1.566.474.744.366 1.333.95.588.583.959 1.325.371.74.486 1.562.115.82-.038 1.636-.153.814-.559 1.537-.405.723-1.02 1.28-.615.555-1.375.886t-1.586.4-1.631-.126q-.806-.198-1.506-.641-.7-.444-1.222-1.088l-.52-.644-.995-1.375q-.994-1.376-1.852-3.32-.858-1.942-1.837-4.178-.978-2.236-1.9-4.636t-1.776-4.562-1.398-4.772q-.544-2.61.42-5.731.965-3.123 2.718-4.958t3.27-3.559q1.515-1.724 3.223-2.861t3.737-2.572q2.029-1.435 5.311-3.641t3.834-2.374 1.125-.197 1.14.078 1.088.348.973.599.802.814q.35.456.583.983t.331 1.093q.1.567.06 1.141-.039.574-.214 1.122-.176.548-.478 1.038-.301.49-.711.894t-.905.698-1.354 1.034-3.41 3.208-4.004 4.013-3.824 3.613-1.7.165-.751-4.357.705-1.494 3.986 1.936 4.068 2.002 4.223 2.014l4.165 2.037q2.15 1.052 3.853 2.13 1.704 1.076 4.068 2.117t4.383 2.063q2.02 1.022 3.883 1.757 1.864.734 3.967 1.694t4.388 2.165 5.037 2.557 6.015 2.762 5.16 2.125 5.265 2.143q3.369 1.43 6.618 2.938t5.616 2.457 5.47 2.404 6.446 2.901 5.406 2.302q2.063.856 3.937 1.845 1.873.988 3.767 2.085t2.276 1.389.684.667q.301.375.504.811t.296.909.07.953-.16.942-.382.876-.58.76-.745.599-.866.403-.938.184-.955-.046q-.474-.081-.915-.273z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="element" data-uid="irqidgrolw" style="--x: 8.396617889404297; --y: 11.57565180460612; --w: 7.8; --h: 6.5; --r: 0; --s: 0.6210660854548005" data-type="majorityvote">
+          <div class="scene active">
+            <img src="/images/shr.jpeg" />
+            <div class="talking">
+              <div class="donny">
+                <h4>Shrimp</h4>
+              </div>
+              <i class="fas fa-caret-down"></i>
+              <div class="innerTalking">
+                <p data-talk="Got $SHRIMP? Keep scrolling if you're in the club."></p>
+              </div>
+            </div>
+          </div>
+          <div class="scene">
+            <img src="/images/shr.jpeg" />
+            <div class="talking">
+              <div class="donny">
+                <h4>Shrimp</h4>
+              </div>
+              <i class="fas fa-caret-down"></i>
+              <div class="innerTalking">
+                <p data-talk="You survive another day. That was a close one!"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="element"
+          style="--ts: 1.5; --f: Bebas Neue; --co: #000000; --x: 5.2986141840616865; --y: 0.6087713241577148; --w: 1; --h: 1; --r: 360; --s: 1.6558737629708469"
+          data-uid="upnchaxrfg"
+          data-scrollto="ifzukkwvbw"
+          data-type="text"
+        >
+          <div class="el_content">
+            <p>🦐</p>
+          </div>
+        </div>
+        <div class="element" data-image="contain" style="--x: 1.1992177963256836; --y: 20.050260543823242; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="https://media.tenor.com/B-h20huQWAYAAAAi/hide-water.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 14.125001271565756; --y: 20.262847264607746; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 3.200001041094462; --y: 20.01983706156413; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 16; --y: 22; --w: 1; --h: 1; --r: 0" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 11.86666738986969; --y: 19.503559748331707; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 7.528125762939453; --y: 21.768447240193684; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 6.060243646303813; --y: 17.5664488474528; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 0.732117493947347; --y: 18.01345443725586; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 1.7321174939473472; --y: 19.01345443725586; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 0.7321178118387858; --y: 21.445791244506836; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+        <div class="element" data-image="contain" style="--x: 14.23194678624471; --y: 17.729556401570637; --w: 1; --h: 1; --r: 0; --s: 1" data-uid="ncyzkxpkim" data-type="image">
+          <img src="/images/hh.gif" draggable="false" loading="lazy" />
+        </div>
+      </div>
+      <div class="spotSearch">
+        <i class="fas fa-times closer"></i>
+        <div class="innerSpotSearch">
+          <div class="searchWrap">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for a song to recommend!" />
+          </div>
+          <div class="spotResults"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const debounce = (func, wait) => {
+        let timeout;
+        return function executedFunction(...args) {
+          const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+          };
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+        };
+      };
+      function formatPaint() {
+        var maxWindow = parseFloat($('.first').css('--mw'));
+        var currentWindow = $(window).width();
+        if (currentWindow < maxWindow) {
+          var paintRatio = currentWindow / maxWindow;
+          $('.first svg,#drawing svg').each(function () {
+            var getOldS = parseFloat(1 - paintRatio);
+            $(this).css('--ns', getOldS);
+          });
+        } else {
+          $('.first svg,#drawing svg').css('--ns', 0);
+        }
+      }
+      function makeGrid() {
+        var getSize = parseFloat($('.content').outerWidth()) / 16 / 16;
+        $('.first').css('--g', getSize);
+        gridSize = parseFloat($('.grid').css('--g')) * 16;
+        gridDown = false;
+        gridSelected = false;
+        formatPaint();
+      }
+      makeGrid();
+      $(window).on('resize', function () {
+        makeGrid();
+      });
+      $('.spotSearch input').keyup(
+        debounce(function () {
+          var getVal = $('.spotSearch input').val();
+          $.ajax({
+            url: 'https://straw.page/power/spotify/search',
+            method: 'GET',
+            data: {
+              q: getVal,
+            },
+            success: function (data) {
+              $('.spotResults').empty();
+              for (var i = 0; i < data.length; i++) {
+                $('.spotResults').append(
+                  `<div class="spotItem"><img src="${data[i].album_image_url}"><div class="spotMeta" data-sound="${data[i].preview}"><h5>${data[i].name}</h5><p><i class="fab fa-spotify"></i>${data[i].artist_list}</p></div></div>`
+                );
+              }
+            },
+          });
+        }, 500)
+      );
+      function calculateEditorHeight() {
+        var getScroll = $(document).scrollTop();
+        $('.content').css('height', '');
+        var getHeight = $('.content')[0].scrollHeight;
+        var getWindowHeight = $(window).outerHeight();
+        /*$(".content").css("min-height",getHeight+((getWindowHeight/100)*75));*/
+        $('.content').css('height', getHeight + 80);
+        $(document).scrollTop(getScroll);
+      }
+      calculateEditorHeight();
+      $(window).on('load', function () {
+        calculateEditorHeight();
+        if (typeof umami !== 'undefined') {
+          ok = umami;
+          if (typeof ok.track == 'undefined') {
+            ok.track = function () {};
+          }
+        }
+      });
+      $(document).on('mousemove touchmove', function (e) {
+        var currentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
+        var currentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
+        $('.eyeball span').each(function () {
+          var standardR = parseFloat($(this).closest('.element').css('--r'));
+          var eye = $(this);
+          var eyeX = eye.offset().left + eye.width() / 2;
+          var eyeY = eye.offset().top + eye.height() / 2;
+          rad = Math.atan2(currentX - eyeX, currentY - eyeY);
+          rot = rad * (180 / Math.PI) * -1 + 180;
+          rot -= standardR;
+          eye.css({
+            '-webkit-transform': 'rotate(' + rot + 'deg)',
+            '-moz-transform': 'rotate(' + rot + 'deg)',
+            '-ms-transform': 'rotate(' + rot + 'deg)',
+            transform: 'rotate(' + rot + 'deg)',
+          });
+        });
+      });
+      if ($(window).width() < 5) {
+        $('.branding')
+          .mouseover(function () {
+            $('.brandingContent').show(150);
+          })
+          .mouseleave(function () {
+            $('.brandingContent').hide(150);
+          });
+      }
+      var findr = ['Instagram', 'Snapchat', 'FB'];
+      function containsCheck(target, pattern) {
+        var value = 0;
+        pattern.forEach(function (word) {
+          value = value + target.includes(word);
+        });
+        return value === 1;
+      }
+      if (containsCheck(navigator.userAgent, findr)) {
+        $('.first').addClass('inst');
+      }
+    </script>
+    <script async defer data-website-id="1ccd1b51-7e14-41e3-bc44-14ced350e7cb" src="https://hello.strawcdn.com/hi.js"></script>
+    <script>
+      var audioElements = {};
+      var spotEls = {};
+      $(document).on('click', '.element[data-sound]', function () {
+        if ($(this).data('type') == 'spotify') {
+          $(this).toggleClass('playing');
+          if ($(this).hasClass('playing')) {
+            $(this).find('.imgWrap i').attr('class', 'fas fa-pause');
+          } else {
+            $(this).find('.imgWrap i').attr('class', 'fas fa-play');
+          }
+        }
+        var soundID = $(this).data('sound');
+        if (!audioElements[soundID]) {
+          audioElements[soundID] = new Audio(soundID);
+        }
+        var audio = audioElements[soundID];
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      });
+      if ($('.element[data-type=blog').length > 0) {
+        $.ajax({
+          type: 'GET',
+          url: 'blog/fetch/posts',
+          success: function (data) {
+            if (data.length > 0) {
+              for (item of data) {
+                switch (item['type']) {
+                  case 'post':
+                    $('.element[data-type=blog] .innerBlog').append(`<div class="post"><a href="${item.url}"><div class="innerPost">${item.content}<div class="meta"><p>~ ${item.published}</p></div></div></a></div>`);
+                    break;
+                }
+              }
+            }
+          },
+        });
+      }
+      function isTouchDevice() {
+        return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+      }
+      function startMajorityVoteTalk() {
+        $('.activeTalk').each(function () {
+          var talkCtx = this;
+          var getText = $(this).data('talk').trim();
+          $(this).text('');
+          $(this).closest('.element').addClass('disableTmp');
+          for (var i = 0; i < getText.length; i++) {
+            (function (index) {
+              setTimeout(function () {
+                $(talkCtx).append(getText[index]);
+                if (index === getText.length - 1) {
+                  $(talkCtx).closest('.element').removeClass('disableTmp');
+                }
+              }, 20 * index);
+            })(i);
+          }
+        });
+      }
+      $('.element[data-type=majorityvote').each(function () {
+        $(this).find('.innerTalking p').eq(0).addClass('activeTalk');
+        startMajorityVoteTalk();
+      });
+      if ($('.element[data-type=friends').length > 0) {
+        $.ajax({
+          url: '/get/following',
+          method: 'GET',
+          success: function (data) {
+            $('.innerFriendsList').empty();
+            $('.innerFriendsList').each(function () {
+              for (var i = 0; i < data.sites.length; i++) {
+                $(this).append(
+                  `<div class="followingDon" data-site="${data.sites[i].site}"><a href="https://${data.sites[i].site}.straw.page"><div class="innerFollowingDon"><img src="${data.sites[i].pic}" />${
+                    data.sites[i].site.length > 7 ? '<div class="marquee" data-fun-text="' + data.sites[i].site + '"></div>' : '<p>' + data.sites[i].site + '</p>'
+                  }</div></a></div>`
+                );
+              }
+            });
+          },
+        });
+      }
+      $(document).on('click', '.innerTalking', function () {
+        var ctxTalk = $(this).find('.activeTalk');
+        var ctxScene = $(this).closest('.scene');
+        if ($(ctxTalk).next('p').length > 0) {
+          $(ctxTalk).empty();
+          $(ctxTalk).removeClass('activeTalk');
+          $(ctxTalk).next('p').addClass('activeTalk');
+          startMajorityVoteTalk();
+        } else {
+          if ($(ctxScene).next('.scene').length > 0) {
+            $(ctxScene).next('.scene').addClass('active');
+            $(ctxScene).find('.activeTalk').removeClass('activeTalk');
+            $(ctxScene).removeClass('active');
+            $(ctxScene).next('.scene').find('.innerTalking p').eq(0).addClass('activeTalk');
+            startMajorityVoteTalk();
+          } else {
+            $('.activeTalk').removeClass('activeTalk');
+            $(this).closest('.element').find('.active').removeClass('active');
+            $(this).closest('.element').find('.scene').eq(0).addClass('active');
+            $(this).closest('.element').find('.scene.active .innerTalking p').eq(0).addClass('activeTalk');
+            startMajorityVoteTalk();
+          }
+        }
+      });
+      var amaCtx;
+      $(document).on('click', '.spotItem', function () {
+        $(amaCtx).find('img').remove();
+        $(amaCtx)
+          .find('.askExtra')
+          .append(`<img src="${$(this).find('img').attr('src')}">`);
+        $(amaCtx).data('song', $(this).find('h5').text());
+        $(amaCtx).data('artist', $(this).find('p').text());
+        $(amaCtx).data('sound', $(this).find('.spotMeta').attr('data-sound'));
+        $('.spotSearch').removeClass('bringUp');
+      });
+      $(document).on('click', '.askExtra', function () {
+        amaCtx = $(this).closest('.element');
+        $('.spotSearch').addClass('bringUp');
+      });
+      $(document).on('click', '.spotSearch .closer', function () {
+        $('.spotSearch').removeClass('bringUp');
+      });
+      $(document).on('click', '.element[data-scrollto]', function (e) {
+        e.stopImmediatePropagation();
+        var getScrollID = $(this).data('scrollto').trim();
+        $('html, body').animate(
+          {
+            scrollTop: $(`.element[data-uid=${getScrollID}]`).offset().top,
+          },
+          400
+        );
+      });
+      function convertRemToPixels(rem) {
+        return rem * parseFloat(getComputedStyle($('.content')[0]).fontSize);
+      }
+      function calculateH(desiredHeight) {
+        const remInPixels = convertRemToPixels(1);
+        const multiplier = 2.34375;
+        const baseHeight = remInPixels * multiplier;
+        const h = desiredHeight / baseHeight;
+        return h;
+      }
+      $(window).on('load', function () {
+        $('.element[data-type=blogcontent]').each(function () {
+          var getBound = $(this)[0].getBoundingClientRect();
+          var oldH = parseFloat($(this).css('--h'));
+          var oldY = parseFloat($(this).css('--y'));
+          var diffH = calculateH(getBound.height) - oldH;
+          $('.element')
+            .not(this)
+            .each(function () {
+              var ctxBound = $(this)[0].getBoundingClientRect();
+              if (ctxBound.left < getBound.right && ctxBound.right > getBound.left) {
+                var ctxY = parseFloat($(this).css('--y'));
+                if (ctxY >= oldY + oldH) {
+                  $(this).css('--y', ctxY + diffH);
+                }
+              }
+            });
+        });
+        calculateEditorHeight();
+      });
+      if ($('.first').css('--cu')) {
+        if (!isTouchDevice()) {
+          $(document).on('mousemove', function (e) {
+            $('.cursorReal').css('left', e.clientX + 'px');
+            $('.cursorReal').css('top', e.clientY + 'px');
+          });
+          $('.first').append(`<div class="cursorReal"></div>`);
+          $('body').addClass('cursorMode');
+        }
+      }
+      $(document).on('click', 'a', function () {
+        if ($(this).find('.element[data-type=button2]').length > 0) {
+          var getLinkText = $(this).text().trim();
+          ok.track('clicked: ' + getLinkText);
+        }
+      });
+      function findExtraInfo(uid) {
+        for (var i = 0; i < extraInfo.length; i++) {
+          if (extraInfo[i].uid == uid) {
+            return extraInfo[i];
+          }
+        }
+        return false;
+      }
+      var extraInfo = [];
+    </script>
+  </body>
+</html>
